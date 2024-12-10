@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@drawable/back"
+    tools:context=".MainActivity">
+
+    <!-- Titre du piano -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Piano Virtuel"
+        android:textColor="#673AB7"
+        android:textSize="30sp" />
+
+    <!-- ScrollView pour les touches du piano -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <!-- Lignes de touches blanches -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="48dp"
+                    android:layout_height="200dp"
+                    android:background="@drawable/pressed_and_normal_selector"
+                    android:backgroundTint="#0B0A0A" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="48dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/pressed_and_normal_selector"
+                    android:backgroundTint="#0B0A0A" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="48dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/pressed_and_normal_selector"
+                    android:backgroundTint="#0B0A0A" />
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="48dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/pressed_and_normal_selector"
+                    android:backgroundTint="#0B0A0A" />
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="48dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/pressed_and_normal_selector"
+                    android:backgroundTint="#0B0A0A" />
+
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="48dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/pressed_and_normal_selector"
+                    android:backgroundTint="#0B0A0A" />
+
+                <Button
+                    android:id="@+id/button7"
+                    android:layout_width="48dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/pressed_and_normal_selector"
+                    android:backgroundTint="#0B0A0A" />
+
+                <Button
+                    android:id="@+id/button8"
+                    android:layout_width="48dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/pressed_and_normal_selector"
+                    android:backgroundTint="#0B0A0A" />
+
+                <Button
+                    android:id="@+id/button9"
+                    android:layout_width="48dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/pressed_and_normal_selector"
+                    android:backgroundTint="#0B0A0A" />
+
+                <Button
+                    android:id="@+id/button10"
+                    android:layout_width="48dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/pressed_and_normal_selector"
+                    android:backgroundTint="#0B0A0A" />
+
+                <Button
+                    android:id="@+id/button11"
+                    android:layout_width="48dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/pressed_and_normal_selector"
+                    android:backgroundTint="#0B0A0A" />
+                <Button
+                    android:id="@+id/button12"
+                    android:layout_width="48dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/pressed_and_normal_selector" />
+                <Button
+                    android:id="@+id/button13"
+                    android:layout_width="48dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/pressed_and_normal_selector" />
+            </LinearLayout>
+
+            <!-- Lignes de touches noires (dièses) -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/sharp1"
+                    android:layout_width="30dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="-15dp"
+                    android:background="@drawable/black_piano_key" />
+                <Button
+                    android:id="@+id/sharp2"
+                    android:layout_width="30dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="-15dp"
+                    android:background="@drawable/black_piano_key" />
+                <!-- Ajouter des touches noires supplémentaires ici selon besoin -->
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- Ajouter ici les étiquettes des notes -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="871dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tc3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C3"
+            android:textColor="#0440a0"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/td3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="D3"
+            android:textColor="#0440a0"
+            android:textSize="20sp" />
+        <!-- Ajouter d'autres TextViews ici pour les autres notes -->
+    </LinearLayout>
+</RelativeLayout>
